@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const express = require('express');
 const cors = require('cors');
-const bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 
 const {
@@ -27,6 +27,13 @@ const userList = [
     password: "mediator",
     name: "Mediator",
     username: "mediator",
+    isAdmin: true
+  },
+  {
+    userId: "451",
+    password: "123456",
+    name: "Samuel",
+    username: "admin",
     isAdmin: true
   },
   {
